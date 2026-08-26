@@ -68,8 +68,16 @@
 
 ### 3. 上传程序
 
+用 Thonny 把下面文件都保存到 ESP32 **根目录**（缺一会报错）：
+
+| 文件 | 作用 |
+|------|------|
+| `main.py` | 入口、WiFi、网页服务（开机自启） |
+| `pca9685.py` | PCA9685 驱动 |
+| `servo.py` | 舵机与动作 |
+| `index.html` | 网页界面 |
+
 - 在 `main.py` 顶部填写 `WIFI_SSID` / `WIFI_PASSWORD`
-- 用 Thonny 将 `main.py` 保存到 ESP32 根目录（开机自启）
 - 串口会打印 IP，浏览器访问 `http://ESP32的IP/`
 - 代码地址 [https://github.com/zlei9607/esp32/tree/main/arm](https://github.com/zlei9607/esp32/tree/main/arm)
 
